@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es-VE">
+  <head>
+    <title>Bootcamp Girls</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link  href="./public/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="titulo">
+        <h1>Lista de Tareas</h1>
+        <h2>Cosas que hago al despertarme</h2>
+      </div>
+      <div class="formulario">
+        <input id="input-text" type="text" placeholder="Digite Aqui..." onkeypress="addTarea(event)">
+      </div>
+      <div class="toDo">
+        <ul></ul>
+      </div>
+      <div id="sidebar" class="sidebar">
+        <div id="aba" class="aba" onclick="opened()"> X</div>
+        <div id="custom" class="custom">
+          <p>Fondo</p>
+          <div class="color-pick">
+            <input id="back" type="color" value="#ececec" onchange="changeBackground()" />
+          </div>
+          <p>Texto</p>
+          <div class="color-pick">
+            <input id="font" type="color" value="#4E4E4E" onchange="changeColorFont()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
