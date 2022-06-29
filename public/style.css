@@ -153,3 +153,21 @@ body {
 .click {
   transition:all .3s ease;
 }
+
+.github {
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0;
+  width: 100%;
+  background-color: rgb(67, 67, 67);
+}
+
+.github > p {
+  margin: 0px;
+  text-align: center;
+  color: #b0b0b0;
+}
+.github > p > a {
+  color: #dbb50b;
+  text-decoration: none;
+}
